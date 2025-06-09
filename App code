@@ -1,0 +1,23 @@
+onEvent("playbutton", "click", function( ) {
+  setScreen("screen2");
+});
+var Score;
+Score = 0;
+onEvent("clickbutton", "click", function( ) {
+  Score = Score + 1;
+  setText("clickbutton", Score);
+  if (Score == 50) {
+    setScreen("screen3");
+  }
+});
+onEvent("restart", "click", function( ) {
+  setScreen("screen1");
+  Score = 0;
+  setText("clickbutton", "click");
+});
+onEvent("continue", "click", function( ) {
+  setScreen("screen2");
+});
+onEvent("button1", "click", function( ) {
+  open("https://www.hello-products.com/?srsltid=AfmBOoo14XukbuyW-yeOlXtIljDWIpVGas6RgJZq_a9Tt-v0yWZnn8Uq");
+});
