@@ -1,0 +1,6 @@
+X= int (input("what is your number"))
+if X>10:
+    Result=X**(1/3)
+else:
+    Result=X**3
+print("your number is",Result)
